@@ -1,22 +1,18 @@
 package restart.app.com;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Toast;
 
 /**
- * Created by Administrator on 2017/4/18.
+ * Created by Administrator on 2017/4/20.
  */
 
-public class SecondActivity extends AppCompatActivity {
+public class ThridActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_thrid);
 //        Thread.setDefaultUncaughtExceptionHandler(new MyExceptionHandler(this));
 //
 //        if (getIntent().getBooleanExtra("crash", false)) {
@@ -30,10 +26,5 @@ public class SecondActivity extends AppCompatActivity {
 
     public void goBack(View v) {
         finish();
-    }
-
-    public void nextPage(View v) {
-        Intent intent = new Intent(this, ThridActivity.class);
-        startActivity(intent);
     }
 }
